@@ -2,6 +2,7 @@ const popup = document.getElementById("popup");
 const clickBtn = document.getElementById("clickBtn");
 const confirmationDiv = document.getElementById("confirmationDiv");
 
+// show popup box by click
 let result = false;
 const openPopup = () => {
   if (!result) {
@@ -13,19 +14,23 @@ const openPopup = () => {
   }
 };
 
+//cancel popup box by click
 const cancelPopup = () => {
   popup.classList.add("hidden");
   result = false;
 };
 
+// delete confirmation box
 const deleteConfirmation = () => {
   confirmationDiv.classList.remove("hidden");
 };
 
+// cancel confirmation box
 const cancelConfirmation = () => {
   confirmationDiv.classList.add("hidden");
 };
 
+// items deleted button
 const deleted = () => {
   confirmationDiv.classList.add("hidden");
   popup.classList.add("hidden");
