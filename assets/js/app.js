@@ -34,7 +34,6 @@ const deleted = () => {
   setTimeout(() => {
     clickBtn.disabled = false;
     clickBtn.innerHTML = "Click Me";
-
     result = false;
   }, 1000);
 };
